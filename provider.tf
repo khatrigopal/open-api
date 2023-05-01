@@ -6,10 +6,7 @@ terraform {
       version = "~> 4.0"
     }
     
-    openapi3 = {
-      source = "terraform-providers/openapi"
-      version = "1.3.0"
-    }
+    
      }
   
   }
@@ -19,4 +16,4 @@ provider "aws" {
  }
 
 
-provider "openapi" {}
+
