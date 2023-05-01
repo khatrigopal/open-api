@@ -6,11 +6,7 @@ terraform {
       version = "~> 4.0"
     }
     
-    openapi = {
-       
-     source  = "hashicorp/openapi"
-      version = "~> 4.0"
-    }
+   
       }
  
   }
