@@ -93,7 +93,7 @@
 
         #Please fix the below  add arn for credentials and remove line 99 and 100 as required
         "x-amazon-apigateway-integration": {
-          "uri": "arn:aws:apigateway:us-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:116746456424:function:dtpl-insights-dev-proxy-api-request-fn/invocations",
+          "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:558940753150:function:test-lambda/invocations",
           "httpMethod": "POST",
           "type": "aws_proxy",
           "passthroughBehavior": "when_no_match",
