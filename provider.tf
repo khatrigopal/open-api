@@ -14,6 +14,6 @@ provider "aws" {
   region = "us-east-1"
  }
 
-provider "openapi3" {
-  url = "https://api.example.com/openapi.yaml"
+provider "openapi" {
+   spec = "./OpenAPISpec.yaml"
 }
