@@ -6,6 +6,10 @@ terraform {
       version = "~> 4.0"
     }
     
+    openapi3 = {
+      source = "terraform-providers/openapi3"
+      version = "1.0.0"
+    }
      }
   
   }
@@ -14,6 +18,4 @@ provider "aws" {
   region = "us-east-1"
  }
 
-provider "openapi" {
-   spec = "./OpenAPISpec.yaml"
-}
+
