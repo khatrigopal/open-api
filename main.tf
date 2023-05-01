@@ -1,3 +1,7 @@
+provider "openapi" {
+  version = "~> 0.5"
+
+
 resource "aws_api_gateway_rest_api" "my_api_gateway" {
   body = jsonencode({
   "openapi": "3.0.0",
