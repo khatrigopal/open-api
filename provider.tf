@@ -7,8 +7,8 @@ terraform {
     }
     
     openapi3 = {
-      source = "terraform-providers/openapi3"
-      version = "1.0.0"
+      source = "terraform-providers/openapi"
+      version = "1.3.0"
     }
      }
   
