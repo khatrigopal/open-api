@@ -6,7 +6,11 @@ terraform {
       version = "~> 4.0"
     }
     
-    
+    openapi = {
+       
+     source  = "hashicorp/openapi"
+      version = "~> 4.0"
+    }
       }
  
   }
@@ -14,10 +18,6 @@ terraform {
 provider "aws" {
   region = "us-east-1"
  }
-
-provider "openapi" {
-  version = "~> 0.5"
-}
 
 
 
