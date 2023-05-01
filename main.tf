@@ -1,5 +1,9 @@
 #provider "openapi" {}
 
+provider "openapi" {
+  file_path = "./OpenAPISpec.yaml"
+}
+
 resource "aws_api_gateway_rest_api" "my_api_gateway" {
   body = jsonencode({
   "openapi": "3.0.0",
