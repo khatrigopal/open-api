@@ -5,11 +5,15 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 4.0"
     }
+    
+     }
+  
   }
-}
 
 provider "aws" {
   region = "us-east-1"
  }
 
-provider "openapi3" {}
+provider "openapi3" {
+  url = "https://api.example.com/openapi.yaml"
+}
