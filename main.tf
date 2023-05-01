@@ -1,6 +1,4 @@
-provider "openapi" {
-  version = "1.2.3"
-}
+provider "openapi" {}
 
 resource "aws_api_gateway_rest_api" "my_api_gateway" {
   body = jsonencode({
