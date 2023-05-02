@@ -96,8 +96,8 @@
           "uri": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:558940753150:function:test-lambda/invocations",
           "httpMethod": "POST",
           "type": "aws_proxy",
-          "passthroughBehavior": "when_no_match",
-          "contentHandling": "CONVERT_TO_TEXT",
+          #"passthroughBehavior": "when_no_match",
+          #"contentHandling": "CONVERT_TO_TEXT",
           "timeoutInMillis": 29000,
           "credentials": "NONE",
           "responses": {
