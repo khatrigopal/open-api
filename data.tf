@@ -3,5 +3,6 @@
 #}
 
 data "template_file" "my_api" {
-  template = "OpenAPISpec.yaml"
+  #template = "OpenAPISpec.yaml"
+   template = file("../OpenAPISpec.yaml")
 }
