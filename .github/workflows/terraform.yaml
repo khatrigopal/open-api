@@ -45,6 +45,11 @@ jobs:
         run: terraform apply -auto-approve
         continue-on-error: true
         
+      - name: Terraform Destroy
+        id: Destroy
+        run: terraform destory -auto-approve
+        continue-on-error: true
+        
      
         
       
