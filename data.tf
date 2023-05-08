@@ -8,6 +8,9 @@ data "template_file" "my_api" {
  
  vars = {
  aws_region = var.AWS_REGION
+ 
+}
+ data "aws_caller_identity" "curret" {}
 }
 
 }
