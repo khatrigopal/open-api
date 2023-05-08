@@ -13,7 +13,7 @@ data "template_file" "my_api" {
  data "aws_caller_identity" "curret" {}
 }
 
-}
+
 data "aws_region" "current" {}
 
 data "aws_caller_identity" "curret" {}
