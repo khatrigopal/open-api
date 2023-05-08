@@ -3,7 +3,7 @@ info:
   title: Simple API overview
   version: 2.0.0
 paths:
-  /:
+  /test1:
     get:
       operationId: listVersionsv2
       summary: List API versions
