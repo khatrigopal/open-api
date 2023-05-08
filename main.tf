@@ -6,9 +6,3 @@ resource "aws_api_gateway_rest_api" "my_api" {
   body = data.template_file.my_api.rendered
   
 }
-
-vars = {
-  aws_region = var.AWS_REGION
- 
-}
-
