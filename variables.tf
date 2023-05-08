@@ -3,3 +3,11 @@ variable "AWS_REGION" {
   type        = string
   default     = "us-east-1"
 }
+
+variable "account_map" {
+ descripttion = "account id"
+ default = {
+   dev = "558940753150"
+   intg = "558940753150"
+ }
+}
