@@ -1,6 +1,6 @@
 variable "aws_region" {
   description = "aws region"
-  type        = string
+  #type        = string
   default     = "us-east-1"
 }
 
