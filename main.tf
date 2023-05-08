@@ -7,3 +7,8 @@ resource "aws_api_gateway_rest_api" "my_api" {
   
 }
 
+vars = {
+  aws_region = var.AWS_REGION
+ 
+}
+
