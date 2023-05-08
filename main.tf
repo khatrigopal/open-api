@@ -19,6 +19,6 @@ resource "aws_lambda_permission" "api-gateway-invoke-lambda" {
   # The /*/* portion grants access from any method on any resource
   # within the specified API Gateway.
   #source_arn = "aws_api_gateway_rest_api.my_api_gateway.execution_arn/*/*"
-  source_arn = "aws_api_gateway_rest_api.my_api_gateway.arn"
+  source_arn = aws_api_gateway_rest_api.my_api_gateway.arn
 }
 
