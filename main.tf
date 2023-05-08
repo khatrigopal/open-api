@@ -10,4 +10,14 @@ resource "aws_api_gateway_rest_api" "my_api_gateway" {
   
 }
 
+resource "aws_lambda_permission" "api-gateway-invoke-lambda" {
+  statement_id  = "AllowAPIGatewayInvoke"
+  action        = "lambda:InvokeFunction"
+  function_name = "test-lambda"
+  principal     = "apigateway.amazonaws.com"
+
+  # The /*/* portion grants access from any method on any resource
+  # within the specified API Gateway.
+  source_arn = "aws_api_gateway_rest_api.my_api_gateway.execution_arn}/*/*"
+}
 
