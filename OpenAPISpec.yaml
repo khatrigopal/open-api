@@ -89,9 +89,26 @@
               }
             }
           }
-        }
+        },
 
-       
+        #Please fix the below  add arn for credentials and remove line 99 and 100 as required
+        "x-amazon-apigateway-integration": {
+          "uri": "arn:aws:apigateway:${data.aws_region.current.name}:lambda:path/2015-03-31/functions/arn:aws:lambda:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:function:test-lambda/invocations",
+          "httpMethod": "POST",
+          "type": "aws_proxy",
+          #"passthroughBehavior": "when_no_match",
+          #"contentHandling": "CONVERT_TO_TEXT",
+          "timeoutInMillis": 29000,
+          "credentials": "NONE",
+          "responses": {
+            "default": {
+              "statusCode": "200",
+              "responseParameters": {
+                "method.response.header.Content-Type": "'application/json'"
+              }
+            }
+          }
+        }
       }
     }
   }
