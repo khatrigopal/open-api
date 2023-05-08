@@ -99,14 +99,16 @@
           #"timeoutInMillis": 29000,
           #"credentials": "NONE",
         "responses": {
-            "default": {
-              "statusCode": "200",
-              "responseParameters": {
-                "method.response.header.Content-Type": "'application/json'"
+            "200": {
+              description: OK
+              content:
+                application/josn:
+                  schema:
+                    type: object
               }
             }
           }
-        }
+        
 
          }
     }
