@@ -5,7 +5,7 @@ variable "AWS_REGION" {
 }
 
 variable "account_map" {
- descripttion = "account id"
+ description = "account id"
  default = {
    dev = "558940753150"
    intg = "558940753150"
