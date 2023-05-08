@@ -10,7 +10,4 @@ resource "aws_api_gateway_rest_api" "my_api_gateway" {
   
 }
 
-vars = {
-    aws_region              = var.AWS_REGION
-    account_id              = var.account_map
-  }
+
