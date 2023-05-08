@@ -98,15 +98,7 @@
           "contentHandling": "CONVERT_TO_TEXT",
           #"timeoutInMillis": 29000,
           #"credentials": "NONE",
-        "responses": {
-            "200": {
-              description: OK
-              content:
-                application/josn:
-                  schema:
-                    type: object
-              }
-            }
+        
           }
         
 
