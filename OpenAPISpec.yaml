@@ -8,7 +8,7 @@ paths:
     post:
       summary: Get my resource
       x-amazon-apigateway-integration:
-        uri: arn:aws:apigateway:${aws_region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${aws_region}:${data.aws_caller_identity.current.account_id}:function:test-lambda/invocations
+        uri: arn:aws:apigateway:${aws_region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${aws_region}:data.aws_caller_identity.current.account_id:function:test-lambda/invocations
         httpMethod: POST
         type: aws_proxy
         contentHandling: CONVERT_TO_TEXT
