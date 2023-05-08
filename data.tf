@@ -4,7 +4,7 @@
 
 data "template_file" "my_api" {
   #template = "OpenAPISpec.yaml"
-   template = file("./openapi-sample.yaml")
+   template = file("./OpenAPISpec.yaml")
 }
 
 data "aws_region" "current" {}
