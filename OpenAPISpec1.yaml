@@ -39,5 +39,15 @@ x-amazon-apigateway-stage:
     deployment: prod
     description: Production stage
 
-
+x-amazon-apigateway:
+  name: my-api
+  extensions:
+    x-amazon-apigateway-api-key-source: HEADER
+  deployments:
+    - name: dev
+      description: Development deployment
+  stage:
+    - name: dev
+      deployment: dev
+      description: Development stage
 
