@@ -4,15 +4,12 @@ info:
   title: My API
   version: 1.0.0
   
-x-stage: dev
-x-display-date:  '2023-05-12'
 
 paths:
   /my-resource:
     post:
       summary: Get my resource
-      security:
-        - IAMAuth: []
+      
       x-amazon-apigateway-integration:
         uri: arn:aws:apigateway:${aws_region}:lambda:path/2015-03-31/functions/arn:aws:lambda:${aws_region}:558940753150:function:test-lambda/invocations
         httpMethod: POST
@@ -26,12 +23,18 @@ paths:
               schema:
                 type: object
 
+x-amazon-apigateway-stage:
+  name: dev
+
 components:
   securitySchemes:
     IAMAuth:
       type: apiKey
       name: Authorization
       in: header
+
+security:
+  - IAMAuth
 
 
 
