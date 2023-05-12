@@ -36,4 +36,5 @@ security:
 x-amazon-apigateway-stage:
   name: dev
   description: Development stage
-  
+  variables:
+    myVariable: dev
