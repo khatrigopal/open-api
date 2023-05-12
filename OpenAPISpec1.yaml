@@ -23,18 +23,21 @@ paths:
               schema:
                 type: object
 
+x-amazon-apigateway:
+  name: MyAPIGateway
+  deployments:
+    dev:
+      description: Development deployment
+    prod:
+      description: Production deployment
+
 x-amazon-apigateway-stage:
-  name: dev
-
-components:
-  securitySchemes:
-    IAMAuth:
-      type: apiKey
-      name: Authorization
-      in: header
-
-security:
-  - IAMAuth
+  dev:
+    deployment: dev
+    description: Development stage
+  prod:
+    deployment: prod
+    description: Production stage
 
 
 
