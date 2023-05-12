@@ -19,3 +19,6 @@ paths:
             application/json:
               schema:
                 type: object
+
+x-amazon-apigateway-stage:
+  name: dev
