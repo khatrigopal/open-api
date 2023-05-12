@@ -12,7 +12,7 @@ resource "aws_lambda_permission" "allow_open_api" {
   action = "lambda:InvokeFunction"
   function_name = "test-lambda"
   principal = "apigateway.amazonaws.com"
-  source_arn = "arn:aws:execute-api:us-west1-558940753150-${aws_api_gateway_rest_api.my_api}/*/*/*"
+  source_arn = "arn:aws:execute-api:us-east-1-558940753150-${aws_api_gateway_rest_api.my_api}/*/*/*"
  
 }
   
