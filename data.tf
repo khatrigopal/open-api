@@ -4,7 +4,7 @@
 
 data "template_file" "my_api" {
   #template = "OpenAPISpec.yaml"
-   template = file("./OpenAPISpec1.yaml")
+   template = file("./OpenAPISpec.yaml")
  
  vars = {
  aws_region = var.AWS_REGION
